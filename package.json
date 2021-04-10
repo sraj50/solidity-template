@@ -1,0 +1,25 @@
+{
+  "name": "solidity-template",
+  "version": "1.0.0",
+  "description": "Template repo for Solidity development",
+  "main": "index.js",
+  "repository": "git@github.com:sraj50/solidity-template.git",
+  "author": "Sid Raj <siddharth.rajesh13@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "start": "hardhat node",
+    "deploy": "hardhat run --network localhost scripts/deploy.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "hardhat": "^2.1.2"
+  }
+}
