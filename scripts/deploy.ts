@@ -3,9 +3,9 @@
 //
 // When running the script with `hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
-const hre = require("hardhat");
+import { ethers } from "hardhat"
 
-async function main() {
+const main = async () => {
   // Hardhat always runs the compile task when running scripts with its command
   // line interface.
   //
@@ -14,7 +14,7 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Box = await hre.ethers.getContractFactory("Box");
+  const Box = await ethers.getContractFactory("Box");
   console.log("Deploying Box contract ...")
   const box = await Box.deploy();
   await box.deployed();
