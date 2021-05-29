@@ -7,10 +7,12 @@
   "author": "Sid Raj <siddharth.rajesh13@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "compile": "npx hardhat compile",
-    "start": "npx hardhat node",
-    "deploy": "npx hardhat run --network localhost scripts/deploy.ts",
-    "test": "npx hardhat test"
+    "compile": "hardhat compile",
+    "start": "hardhat node",
+    "deploy": "hardhat run --network localhost scripts/deploy.ts",
+    "test": "hardhat test",
+    "console": "hardhat console --network localhost",
+    "format": "prettier --write 'contracts/**/*.sol'"
   },
   "devDependencies": {
     "@typechain/ethers-v5": "^7.0.0",
