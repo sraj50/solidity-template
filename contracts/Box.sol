@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Box is Ownable {
     uint256 private value;
 
-    event ValueChanged(uint256 newValue); 
+    event ValueChanged(uint256 newValue);
 
     // The onlyOwner modifier restricts who can call the store function
     function store(uint256 newValue) public onlyOwner {
