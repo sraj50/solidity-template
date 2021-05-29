@@ -1,5 +1,5 @@
 import { ethers } from "hardhat"
-import { Signer, ContractFactory } from "ethers"
+import { Signer } from "ethers"
 import chai from "chai"
 import chaiAsPromised from "chai-as-promised"
 import { solidity } from "ethereum-waffle"
